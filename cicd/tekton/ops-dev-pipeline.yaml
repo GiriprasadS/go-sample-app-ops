@@ -50,4 +50,4 @@ spec:
         - name: GITHUB_TOKEN_SECRET_KEY
           value: $(params.github-token-secret-key)
         - name: TAG
-          value: $(params.tag)
+          value: \$(params.tag)

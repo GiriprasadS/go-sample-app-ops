@@ -26,7 +26,7 @@ spec:
         yq m -i -x kustomization.yaml - <<EOD
         images:
           - name: giriprasads/go-sample-app  # used for Kustomize matching
-            newTag: $(params.TAG)
+            newTag: \$(params.TAG)
         EOD
   - name: git-commit
     image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.12.1
