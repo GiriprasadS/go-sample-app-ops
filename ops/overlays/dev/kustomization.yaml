@@ -6,5 +6,5 @@ resources:
 namespace: dev
 images:
   - name: giriprasads/go-sample-app # used for Kustomize matching
-    newTag: $(params.tag)
+    newTag: \$(params.tag)
 namePrefix: dev-
